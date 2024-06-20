@@ -202,7 +202,6 @@ a:hover {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0 20px;
     grid-template-areas:
         "title title"
         "text text";
@@ -213,7 +212,7 @@ a:hover {
 .title__brands {
     font-family: "Space Grotesk", sans-serif;
     font-weight: 600;
-    font-size: 56px;
+    font-size: 3.5em;
     line-height: 118%;
     text-align: center;
     color: #151515;
@@ -223,13 +222,14 @@ a:hover {
 .text__brands {
     font-family: "Inter", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 140%;
     text-align: center;
     color: #151515;
     grid-area: text;
     position: relative;
     bottom: 35px;
+    width: 45%;
 }
 
 .content__brands {
@@ -473,7 +473,7 @@ li {
         height: 50px;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
         background-color: #FFFFFF;
         border: none;
         padding: 0;
@@ -706,5 +706,53 @@ li {
         "title"
         "text"
         "button";
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .title__brands {
+        font-size: 3em;
+    }
+
+    .text__brands {
+        font-size: 1em;
+    }
+
+    .image__brands > img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title__brands {
+        font-size: 2.5em;
+    }
+
+    .text__brands {
+        width: 60%;
+    }
+
+    .image__brands > img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .title__brands {
+        font-size: 2em;
+        width: 70%;
+    }
+
+    .text__brands {
+        font-size: 1em;
+        width: 86%;
+    }
+
+    .content__brands {
+        display: flex;
+        flex-direction: column;
+    }
+    .image__brands > img {
+        width: 95%;
     }
 }
