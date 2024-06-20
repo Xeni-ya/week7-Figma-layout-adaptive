@@ -1,4 +1,4 @@
-/* *{
+/* * {
     outline: deeppink 1px solid;
 } */
 
@@ -148,7 +148,9 @@ a:hover {
     display: grid;
     grid-area: text;
     position: relative;
-    bottom: 60px;
+    bottom: 55px;
+    left: 5px;
+    width: 420px
 }
 
 .button__top {
@@ -163,7 +165,7 @@ a:hover {
     font-size: 1.125em;
     grid-area: button;
     position: relative;
-    bottom: 100px;
+    bottom: 115px;
     right: 95px;
 }
 
@@ -178,14 +180,14 @@ a:hover {
     grid-area: image;
     z-index: 1;
     position: relative;
-    top: 18px;
+    top: 23px;
 }
 
 .points {
     grid-area: points;
     position: relative;
     bottom: 150px;
-    left: 280px;
+    left: 270px;
 }
 
 /* секция с брендами */
@@ -492,9 +494,6 @@ li {
     }
 }
 
-@media screen and (max-width: 1450px) {
-
-}
 @media screen and (max-width: 1024px){
     .image__top {
         width: 80%;
@@ -516,13 +515,196 @@ li {
     .text__top {
         font-size: 1em;
         position: relative;
-        left: 80px;
+        left: 44px;
         bottom: 38px;
+        width: 296px;
     }
 
     .button__top {
         position: relative;
-        left: 4px;
+        left: 3px;
         bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .title {
+        font-size: 3em;
+        position: relative;
+        top: 7px;
+        left: 44px;
+    } 
+
+    .text__top {
+        font-size: 1em;
+        position: relative;
+        left: 44px;
+        bottom: 38px;
+        width: 296px;
+    }
+
+    .button__top {
+        position: relative;
+        left: 2px;
+        bottom: 61px;
+        width: 70%;
+    }
+
+    .image__top {
+        width: 80%;
+        position: relative;
+        right: 17px;
+        top: 3px;
+    }
+
+    .points {
+        width: 22%;
+        position: relative;
+        bottom: 116px;
+        left: 140px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .title {
+        font-size: 3em;
+        position: relative;
+        top: -60px;
+        left: -28px;
+        width: 70%;
+    } 
+
+    .text__top {
+        font-size: 1em;
+        position: relative;
+        left: -20px;
+        top: -96px;
+        width: 296px;
+    }
+
+    .button__top {
+        position: relative;
+        left: -26px;
+        top: -92px;
+        width: 70%;
+    }
+
+    .points {
+        width: 22%;
+        position: relative;
+        bottom: 5px;
+        left: 160px;
+    }
+
+    .image__top {
+        width: 85%;
+        position: relative;
+        top: 53px;
+        left: 2px;
+    }
+
+    .top__container {
+        grid-template-areas:
+        "image"
+        "points"
+        "title"
+        "text"
+        "button";
+    }
+}
+
+@media screen and (max-width: 375px){
+    .title {
+        font-size: 3em;
+        position: relative;
+        top: -60px;
+        left: -24px;
+        width: 70%;
+    } 
+
+    .text__top {
+        font-size: 1em;
+        position: relative;
+        left: -1px;
+        top: -96px;
+        width: 296px;
+    }
+
+    .button__top {
+        position: relative;
+        left: -23px;
+        top: -92px;
+        width: 70%;
+    }
+
+    .points {
+        width: 22%;
+        position: relative;
+        bottom: 0px;
+        left: 140px;
+    }
+
+    .image__top {
+        width: 85%;
+        position: relative;
+        top: 53px;
+        left: 2px;
+    }
+
+    .top__container {
+        grid-template-areas:
+        "image"
+        "points"
+        "title"
+        "text"
+        "button";
+    }
+}
+
+@media screen and (max-width: 320px){
+    .title {
+        font-size: 3em;
+        position: relative;
+        top: -49px;
+        left: -20px;
+        width: 70%;
+    } 
+
+    .text__top {
+        font-size: 1em;
+        position: relative;
+        left: 11px;
+        top: -94px;
+        width: 268px;
+    }
+
+    .button__top {
+        position: relative;
+        left: -16px;
+        top: -92px;
+        width: 70%;
+    }
+
+    .points {
+        width: 22%;
+        position: relative;
+        bottom: -10px;
+        left: 120px;
+    }
+
+    .image__top {
+        width: 85%;
+        position: relative;
+        top: 53px;
+        left: 2px;
+    }
+
+    .top__container {
+        grid-template-areas:
+        "image"
+        "points"
+        "title"
+        "text"
+        "button";
     }
 }
