@@ -626,6 +626,11 @@ li {
         "text"
         "button";
     }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
 }
 
 @media screen and (max-width: 375px){
